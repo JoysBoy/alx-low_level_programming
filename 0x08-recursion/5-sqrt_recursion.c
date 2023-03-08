@@ -1,27 +1,8 @@
 /**
- * _sqrt_recursion - returns the natural square root of a number.
+ * _sqrt - Finds the square root of a number.
  *
- * @n: the number to calculate its square root.
- *
- * Return: The natural square root of @n, if @n doesn't have a natural square root,
- *         return -1.
- */
-int _sqrt_recursion(int n)
-{
-	if (n < 0)
-		return (-1);
-
-	if (n == 0 || n == 1)
-		return (n);
-
-	return (_sqrt(n, 1));
-}
-
-/**
- * _sqrt - finds the square root of @n using recursion.
- *
- * @n: the number to calculate its square root.
- * @i: the divisor.
+ * @n: The number to calculate the square root of.
+ * @i: The divisor.
  *
  * Return: The square root of @n, if @n doesn't have a natural square root,
  *         return -1.
@@ -35,4 +16,23 @@ int _sqrt(int n, int i)
 		return (i);
 
 	return (_sqrt(n, i + 1));
+}
+
+/**
+ * _sqrt_recursion - Returns the natural square root of a number.
+ *
+ * @n: The number to calculate the square root of.
+ *
+ * Return: The natural square root of @n, if @n doesn't have a natural square root,
+ *         return -1.
+ */
+int _sqrt_recursion(int n)
+{
+	if (n < 0)
+		return (-1);
+
+	if (n == 0 || n == 1)
+		return (n);
+
+	return (_sqrt(n, 1));
 }
