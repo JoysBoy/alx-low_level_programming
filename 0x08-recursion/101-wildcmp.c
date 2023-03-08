@@ -1,6 +1,6 @@
 /**
  * wildcmp - compares two strings and returns 1 if the strings can be considered
- *           identical, otherwise returns 0.
+ * identical, otherwise returns 0.
  * @s1: pointer to first string
  * @s2: pointer to second string (may contain wildcard '*')
  *
