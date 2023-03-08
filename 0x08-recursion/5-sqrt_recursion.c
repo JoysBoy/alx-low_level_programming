@@ -5,7 +5,7 @@
  * @i: The divisor.
  *
  * Return: The square root of @n, if @n doesn't have a natural square root,
- *         return -1.
+ * return -1.
  */
 int _sqrt(int n, int i)
 {
@@ -24,7 +24,7 @@ int _sqrt(int n, int i)
  * @n: The number to calculate the square root of.
  *
  * Return: The natural square root of @n, if @n doesn't have a natural square root,
- *         return -1.
+ * return -1.
  */
 int _sqrt_recursion(int n)
 {
