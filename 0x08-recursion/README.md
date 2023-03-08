@@ -1,0 +1,41 @@
+#0x08. C - Recursion
+
+##Functions
+
+0. She locked away a secret, deep inside herself, something she once knew to be true... but chose to forget
+	* Prints a string, followed by a new line.
+	* Prototype: void _puts_recursion(char *s);
+
+1. Why is it so important to dream? Because, in my dreams we are together
+	* Prints a string in reverse.
+	* Prototype: void _print_rev_recursion(char *s);
+
+2. Dreams feel real while we're in them. It's only when we wake up that we realize something was actually strange
+	* Returns the length of a string.
+	* Prototype: int _strlen_recursion(char *s);
+
+3. You mustn't be afraid to dream a little bigger, darling
+	* Returns the factorial of a given number.
+	* Prototype: int factorial(int n);
+
+4. Once an idea has taken hold of the brain it's almost impossible to eradicate
+	* returns the value of x raised to the power of y.
+	* Prototype: int _pow_recursion(int x, int y);
+
+5. Your subconscious is looking for the dreamer
+	* Returns the natural square root of a number.
+	* Prototype: int _sqrt_recursion(int n);
+
+6. Inception. Is it possible?
+	* Returns 1 if the input integer is a prime number, otherwise return 0.
+	* Prototype: int is_prime_number(int n);
+
+7. They say we only use a fraction of our brain's true potential. Now that's when we're awake. When we're asleep, we can do almost anything
+	* Returns 1 if a string is a palindrome and 0 if not.
+	* Prototype: int is_palindrome(char *s);
+
+8. Inception. Now, before you bother telling me it's impossible...
+	* Compares two strings and returns 1 if the strings can be considered identical, otherwise return 0.
+	* Prototype: int wildcmp(char *s1, char *s2);
+
+
