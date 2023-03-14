@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -90,4 +91,41 @@ char **strtow(char *str)
 	words[i] = NULL;
 
 	return (words);
+}
+
+/**
+ *main - Entry point.
+ *@argc: The number of command-line arguments.
+ *@argv: An array containing the command-line arguments.
+ *
+ *Return: 0 upon success, non-zero otherwise.
+ */
+int main(int argc, char *argv[])
+{
+	char **words;
+	int i;
+
+	if (argc != 2)
+	{
+		printf("Usage: %s <string>\n", argv[0]);
+		return (1);
+	}
+
+	words = strtow(argv[1]);
+
+	if (words == NULL)
+	{
+		printf("Error\n");
+		return (1);
+	}
+
+	for (i = 0; words[i] != NULL; i++)
+	{
+		printf("%s\n", words[i]);
+		free(words[i]);
+	}
+
+	free(words);
+
+	return (0);
 }
