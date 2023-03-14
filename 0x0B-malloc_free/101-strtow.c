@@ -40,7 +40,7 @@ char **strtow(char *str)
 		return (NULL);
 	  util(words, str);
 	  words[len] = NULL;
-	  return (words);
+	return (words);
 }
 
 /**
