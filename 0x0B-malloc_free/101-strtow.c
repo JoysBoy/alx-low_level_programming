@@ -3,10 +3,10 @@
 #include <stdlib.h>
 
 /**
- *count_words - Counts the number of words in a string.
- *@str: The input string.
+ * count_words - Counts the number of words in a string.
+ * @str: The input string.
  *
- *Return: The number of words in the string.
+ * Return: The number of words in the string.
  */
 int count_words(char *str)
 {
@@ -22,10 +22,10 @@ int count_words(char *str)
 }
 
 /**
- *word_len - Computes the length of a word.
- *@str: The input string.
+ * word_len - Computes the length of a word.
+ * @str: The input string.
  *
- *Return: The length of the word.
+ * Return: The length of the word.
  */
 int word_len(char *str)
 {
@@ -41,13 +41,13 @@ int word_len(char *str)
 }
 
 /**
- *strtow - Splits a string into words.
- *@str: The input string.
+ * strtow - Splits a string into words.
+ * @str: The input string.
  *
- *Return: If str is NULL, str is "", or memory allocation fails - NULL.
- *Otherwise - a pointer to an array of strings (words).
- *Each element of this array contains a single word, null-terminated.
- *The last element of the returned array is NULL.
+ * Return: If str is NULL, str is "", or memory allocation fails - NULL.
+ * Otherwise - a pointer to an array of strings (words).
+ * Each element of this array contains a single word, null-terminated.
+ * The last element of the returned array is NULL.
  */
 char **strtow(char *str)
 {
@@ -91,41 +91,4 @@ char **strtow(char *str)
 	words[i] = NULL;
 
 	return (words);
-}
-
-/**
- *main - Entry point.
- *@argc: The number of command-line arguments.
- *@argv: An array containing the command-line arguments.
- *
- *Return: 0 upon success, non-zero otherwise.
- */
-int main(int argc, char *argv[])
-{
-	char **words;
-	int i;
-
-	if (argc != 2)
-	{
-		printf("Usage: %s <string>\n", argv[0]);
-		return (1);
-	}
-
-	words = strtow(argv[1]);
-
-	if (words == NULL)
-	{
-		printf("Error\n");
-		return (1);
-	}
-
-	for (i = 0; words[i] != NULL; i++)
-	{
-		printf("%s\n", words[i]);
-		free(words[i]);
-	}
-
-	free(words);
-
-	return (0);
 }
