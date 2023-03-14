@@ -10,7 +10,7 @@
  */
 char *_strdup(char *str)
 {
- 	char *dup;
+	char *dup;
 	unsigned int len = 0;
 	unsigned int i;
 
